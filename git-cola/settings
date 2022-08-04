@@ -1,0 +1,27 @@
+{
+    "bookmarks": [],
+    "gui_state": {
+        "mainview": {
+            "geometry": "AdnQywADAAAAAADiAAAAGAAABiEAAAQXAAAA4gAAAC4AAAYhAAAEFwAAAAAAAAAABwAAAADiAAAALgAABiEAAAQX",
+            "width": 1344,
+            "height": 1002,
+            "x": 226,
+            "y": 24,
+            "lock_layout": false,
+            "windowstate": "AAAA/wAAAAL9AAAAAgAAAAIAAAVAAAACRvwBAAAAA/sAAAAMAFMAdABhAHQAdQBzAQAAAAAAAADeAAAAcwD////7AAAADABDAG8AbQBtAGkAdAEAAADhAAACPwAAAJUA/////AAAAyMAAAIdAAAArAD////6AAAAAAEAAAAE+wAAABAAQgByAGEAbgBjAGgAZQBzAQAAAAD/////AAAAmAD////7AAAAFABTAHUAYgBtAG8AZAB1AGwAZQBzAQAAAAD/////AAAArAD////7AAAAEgBGAGEAdgBvAHIAaQB0AGUAcwAAAAAA/////wAAAKsA////+wAAAAwAUgBlAGMAZQBuAHQAAAAAAP////8AAACJAP///wAAAAMAAAVAAAABofwBAAAAAvsAAAAIAEQAaQBmAGYBAAAAAAAABUAAAABwAP////wAAAAA/////wAAAAAA////+v////8BAAAAAvsAAAAOAEEAYwB0AGkAbwBuAHMAAAAAAP////8AAABjAP////sAAAAOAEMAbwBuAHMAbwBsAGUAAAAAAP////8AAABmAP///wAABUAAAAAAAAAABAAAAAQAAAAIAAAACPwAAAAA",
+            "show_status_filter": false,
+            "toolbars": [],
+            "ref_sort": 0,
+            "show_diff_line_numbers": false,
+            "image_diff_mode": 0,
+            "image_zoom_mode": 0
+        }
+    },
+    "recent": [
+        {
+            "name": "service_bus",
+            "path": "/Users/maherhawash/src/gems/service_bus"
+        }
+    ],
+    "copy_formats": []
+}

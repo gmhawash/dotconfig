@@ -1,0 +1,45 @@
+{
+  "coc.preferences.colorSupport": true,
+  "solargraph.diagnostics": true,
+  "solargraph.autoformat": true,
+  "solargraph.formatting": true,
+  "solargraph.hover": false,
+  "solargraph.useBundler": false,
+  //"eslint.autoFixOnSave": true,
+  //"eslint.filetypes": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  //"prettier.disableSuccessMessage": true,
+  //"javascript.referencesCodeLens.enable": false,
+  //"typescript.referencesCodeLens.enable": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "javascript",
+    "typescript",
+    "json",
+    "sh",
+    "ruby"
+  ],
+  "codeLens.enable": false,
+  "diagnostic-languageserver.filetypes": {
+    "markdown": ["write-good", "markdownlint"],
+    "sh": "shellcheck -x",
+    "Dockerfile": "hadolint"
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "sh": "shfmt"
+  },
+  "diagnostic-languageserver.formatters": {
+    // define our formatter so that we can reference it from
+    // `diagnostic-languageserver.formatFiletypes`
+    "shfmt": {
+      "command": "shfmt",
+      // all the args below are entirely optional
+      // primarily listed here to call out that flags which take an
+      // argument (such as `-i <num-spaces>` for specifying indentation)
+      // should be split into two strings, the flag and then the value
+      "args": ["-i", "2", "-bn", "-ci", "-sr"]
+    }
+  },
+  "languageserver": {},
+  "suggest.timeout": 1000
+}
