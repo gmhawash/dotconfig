@@ -1,8 +1,8 @@
 {
   "coc.preferences.colorSupport": true,
   "solargraph.diagnostics": true,
-  "solargraph.autoformat": true,
-  "solargraph.formatting": true,
+  "solargraph.autoformat": false,
+  "solargraph.formatting": false,
   "solargraph.hover": false,
   "solargraph.useBundler": false,
   //"eslint.autoFixOnSave": true,
