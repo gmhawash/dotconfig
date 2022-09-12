@@ -94,8 +94,8 @@ call plug#begin('~/.local/share/nvim/plugged')
   " color themes & usability
   Plug 'flazz/vim-colorschemes'
   Plug 'Yggdroot/indentLine'
-  let g:indentLine_enabled = 0
-  map <F9> :IndentLinesToggle<CR>
+  let g:indentLine_enabled = 1
+  "map <F9> :IndentLinesToggle<CR>
   Plug 'itchyny/lightline.vim'
   let g:lightline = {
         \ 'colorscheme': 'jellybeans',

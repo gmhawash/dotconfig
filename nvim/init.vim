@@ -56,23 +56,29 @@ map <silent> <C-k> <C-W>+
 map <silent> <C-l> <C-w>>
 
 " Autosave
-let g:auto_save = 1
-let g:auto_save_events = ["InsertLeave", "TextChanged"]
+"let g:auto_save = 1
+"let g:auto_save_events = ["InsertLeave", "TextChanged"]
 
 " Source Vim configuration file and install plugins
 nnoremap <silent><leader>1 :source ~/.config/nvim/init.vim \| :PlugInstall<CR>
 nnoremap <silent><leader>11 :e ~/.config/nvim/init.vim<CR>
 
+" Bind K to search for the word under cursor
+nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" Remove trailing spaces on save
+autocmd BufWritePre * :%s/\s\+$//e
+
 source $HOME/.config/nvim/packages.vim
 source $HOME/.config/nvim/coc.vim
 source $HOME/.config/nvim/ruby.vim
-"source $HOME/.config/nvim/json.vim
-source $HOME/.config/nvim/ignores.vim
-source $HOME/.config/nvim/testing.vim
-source $HOME/.config/nvim/git.vim
-source $HOME/.config/nvim/search.vim
-source $HOME/.config/nvim/ag.vim
-source $HOME/.config/nvim/terminal.vim
+source $HOME/.config/nvim/json.vim
+ource $HOME/.config/nvim/ignores.vim
+ource $HOME/.config/nvim/testing.vim
+#source $HOME/.config/nvim/git.vim
+"source $HOME/.config/nvim/search.vim
+"source $HOME/.config/nvim/ag.vim
+"source $HOME/.config/nvim/terminal.vim
 
 let g:indent_guides_auto_colors=0
 let g:indent_guides_start_level=2
@@ -121,8 +127,9 @@ let NERDTreeCascadeSingleChildDir = 0
 nmap <c-e> :NERDTreeToggle<CR>:vertical res 40<CR><C-w>=
 map <leader>ff :NERDTreeFind<cr>
 
-" Toggle markdown live view
-nmap md :LivedownToggle
+
+" format the entire file
+nmap <leader>fef ggVG=
 
 " F5 trims trailing whitespace
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
@@ -153,6 +160,7 @@ map <Leader>l oputs<Space>"😄#{__FILE__}:#{__LINE__} #{__method__}😄"<esc>==
 map <Leader>s oputs<Space>'🔥'*80<esc>==
 map <Leader>p obinding.pry<esc>==
 map <leader>F yi(A { FactoryBot.create(<esc>pA) }<esc>
+map <leader>fz ggO# frozen_string_literal: true<esc>
 
 " Git stuff
 map <leader>gh :0Gclog<CR>
